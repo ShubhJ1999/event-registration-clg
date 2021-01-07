@@ -9,7 +9,7 @@
     <style>
       @media (min-width: 768px){
         .modal-dialog{
-          min-width: 40% !important;
+          min-width: 50% !important;
         }
       }
     </style>
@@ -29,21 +29,22 @@
       <!-- Row -->
       <div class="row justify-content-center">
         <!-- Card - 1 -->
-        <div class="col-12 col-md-5 m-1 p-0 p-md-4">
+        <div class="col-12 col-lg-5 m-1 p-0 p-md-5 p-lg-4">
           <div class="card shadow-none">
             <img class="card-img-top vh-75 vw-75" src="images/card-img.jpg">
             <!-- Image should be 525x240 -->
             <div class="card-body">
               <h4>Machine Learning Webinar</h4>
               <sup>Department of Computer Engineering</sup>
-              <p>Registration Ends On : 15th January<br />Venue of the Event : Zoom Meeting</p>
+              <p>Registration Ends On : 15th January<br />Venue of the Event : Zoom Meeting</p>              
               <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</button>
+              <button type="button" class="btn btn-warning"><a>Brochure</a></button>
             </div>
           </div>
         </div>
         <!-- Card - 2 -->
-        <div class="col-12 col-md-5 m-1 p-0 p-md-4">
+        <div class="col-12 col-lg-5 m-1 p-0 p-md-4">
           <div class="card shadow-none">
             <img class="card-img-top vh-75 vw-75" src="images/card-img.jpg">
             <!-- Image should be 525x240 -->
@@ -51,8 +52,11 @@
               <h4>Machine Learning Webinar</h4>
               <sup>Department of Computer Engineering</sup>
               <p>Registration Ends On : 15th January<br />Venue of the Event : Zoom Meeting</p>
-              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</button>
+              <div class="pl-sm-2">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</button>
+                <button type="button" class="btn btn-warning"><a>Brochure</a></button>
+              </div>
             </div>
           </div>
         </div>
@@ -62,7 +66,7 @@
 
   <!-- More Information Section -->
   <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <div class="modal-title" id="detailsModalLabel">
@@ -72,114 +76,47 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="container-fluid">
-            <!-- Cheif Guest (If Any) -->
-            <!-- <div class="row text-center justify-content-center align-items-center">
-              <div class="col-8 col-md-4">
-                <img class="img-thumbnail rounded-circle w-75 h-100" src="images/avatar.png" alt="Image" />
-              </div>
-              <div class="col-12 col-md-6">
-                <div>
-                  <h5 class="my-0 mt-3 m-md-0">Cheif Guest</h5>
-                  <span class="fst-italic fw-bold">Dr. Kamal Nayan</span>
-                </div>
-              </div>
-            </div><hr /> -->
-
-            <!-- About Speaker -->
-            <div class="row text-center justify-content-center align-items-center">
-              <div class="col-8 col-md-4">
-                <img class="img-thumbnail rounded-circle w-75 h-100" src="images/avatar.png" alt="Image" />
-              </div>
-              <div class="col-12 col-md-6">
-                <div>
-                  <h6 class="mt-3 mt-md-0">Speaker of the Event</h6>
-                  <h5 class="fw-bold m-0">Faculty Name</h5>
-                  <p class="m-0">Title</p>
-                </div>
-              </div>
-            </div><hr />
-
-            <!-- Description -->
-            <div class="row justify-content-center">
-              <div class="col-12 col-md-12 text-center">
-                <h6>Purpose</h6>
-              </div>
-              <div class="col-12 col-md-12 text-center">
-                <span>Machine learning is a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention.</span>
-              </div>
-            </div><hr />
-
-            <div class="row justify-content-center">
-              <div class="col-12 col-md-4 text-center">
-                <h6>Topics to be Discussed</h6>
-              </div>
-              <div class="col-12 col-md-8">
-                <ul>
-                  <li>Artificial Intelligence (AI)</li>
-                  <li>Machine Learning (ML)</li>
-                  <li>Supervised Learning</li>
-                  <li>Unsupervised Learning</li>
-                </ul>
-              </div>
-            </div><hr />
-
-            <div class="row justify-content-center">
-              <div class="col-12 col-md-4 text-center">
-                <h6>Your Takeaway</h6>
-              </div>
-              <div class="col-12 col-md-8">
-                <ul>
-                  <li>Artificial Intelligence (AI)</li>
-                  <li>Machine Learning (ML)</li>
-                  <li>Supervised Learning</li>
-                  <li>Unsupervised Learning</li>
-                </ul>
-              </div>
-            </div><hr />
-
-            <div class="row justify-content-center text-center">
-              <div class="col-12 col-md-4">
-                <h6>Event Date</h6>
-              </div>
-              <div class="col-12 col-md-8">
-                <span>15th January, 2020</span>
-              </div>
+          <div class="container-fluid p-0">            
+            <div class="table-responsive">
+              <table class="table align-middle table-bordered table-striped table-hover p-0 m-0">
+                <caption>For any queries, contact faculty coordinator of the respective event.</caption>
+                <tbody>
+                  <tr>
+                    <th scope="col">Event Name</th>
+                    <th scope="col">Machine Learning Webinar</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Event Id</th>
+                    <td>CE/2021/1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Department</th>
+                    <td>Computer Engineering</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Speaker of the Event</th>
+                    <td>Faculty Name (Title)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Event Date</th>
+                    <td>15th January, 2021</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Event Time</th>
+                    <td><time>10:00 AM</time> <b>to</b> <time>11:00 AM</time></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Faculty Coordinator</th>
+                    <td>Faculty Name (Title)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Contact</th>
+                    <td>Email Address</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-
-            <div class="row justify-content-center text-center">
-              <div class="col-12 col-md-4">
-                <h6 class="mt-3 mt-md-0">Event Timing</h6>
-              </div>
-              <div class="col-12 col-md-8">
-                <span><time>10:00 am</time> <b>to</b> <time>11:00 am</time></span>
-              </div>
-            </div><hr />
-
-            <!-- Credits -->
-            <div class="row text-center justify-content-center align-items-center">
-              <div class="col-12 col-md-12 text-center">
-                <p class="fw-bolder m-0">Organized By</p>
-                <p class="fw-bold mb-2 fst-italic">Department of Computer Engineering</p>
-              </div>
-              <div class="col-6 col-md-4 mt-3 mt-md-0">
-                <img class="img-thumbnail rounded-circle w-75 h-100" src="images/avatar.png" alt="Image" />
-                <p class="fw-bold m-0">Faculty Name</p>
-                <h6 class="my-0">Title</h6>                
-              </div>
-              <div class="col-6 col-md-4 mt-3 mt-md-0">
-                <img class="img-thumbnail rounded-circle w-75 h-100" src="images/avatar.png" alt="Image" />
-                <p class="fw-bold m-0">Faculty Name</p>
-                <h6 class="my-0">Title</h6>                
-              </div>
-              <div class="col-6 col-md-4 mt-3 mt-md-0">
-                <img class="img-thumbnail rounded-circle w-75 h-100" src="images/avatar.png" alt="Image" />
-                <p class="fw-bold m-0">Faculty Name</p>
-                <h6 class="my-0">Title</h6>                
-              </div>
-            </div>
-
-          </div>                         
+          </div>
         </div>
     
         <div class="modal-footer">
@@ -191,7 +128,7 @@
 
   <!-- Registration Section -->
   <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
             <div class="modal-title" id="registerModalLabel">
@@ -201,33 +138,27 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form class="form">
-            <div class="form-group">
+          <form class="row form">
+           
+            <div class="col-12 col-md-6 form-group">
               <label for="fname" class="col-form-label">First Name :</label>
               <input type="text" class="form-control" name="fname" placeholder="Your First Name" required>
             </div>
-            <div class="form-group">
+            <div class="col-12 col-md-6 form-group">
               <label for="lname" class="col-form-label">Last Name :</label>
               <input type="text" class="form-control" name="lname" placeholder="Your Last Name" required>
             </div>
-            <div class="form-group">
+          
+            <div class="col-12 col-md-6 form-group">
               <label for="erno" class="col-form-label">Enrollment No. :</label>
               <input type="tel" class="form-control" name="erno" placeholder="Your Enrollment Number" required>
             </div>
-            <div class="form-group">
-              <label for="gender" class="col-form-label">Gender :</label><br>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" class="form-control-input" id="customRadio" name="gender">
-                <label class="custom-control-label" for="customRadio">Male</label>&emsp;
-            
-                <input type="radio" class="form-control-input" id="customRadio2" name="gender">
-                <label class="custom-control-label" for="customRadio2">Female</label>&emsp;
-            
-                <input type="radio" class="form-control-input" id="customRadio3" name="gender">
-                <label class="custom-control-label" for="customRadio3">Others</label>&emsp;
-              </div>
+            <div class="col-12 col-md-6 form-group">
+              <label for="moblie" class="col-form-label">Contact Number :</label>
+              <input type="tel" class="form-control" name="mobileno" placeholder="Your Contact Number" required="[0-9]{10}">
             </div>
-            <div class="form-group">
+
+            <div class="col-12 col-md-6 form-group">
               <label for="department" class="col-form-label">Department :</label>
               <select name="department" class="form-select">
                 <option selected>Select Department</option>
@@ -239,7 +170,7 @@
                 <option value="metallurgy">Metallurgy</option>
               </select>
             </div>
-            <div class="form-group">
+            <div class="col-12 col-md-6 form-group">
               <label for="semester" class="col-form-label">Semester :</label>
               <select name="semester" class="form-select">
                 <option selected>Select Semester</option>
@@ -250,18 +181,16 @@
                 <option value="5">5th</option>
                 <option value="6">6th</option>
                 <option value="7">7th</option>
-                <option value="8">7th</option>
+                <option value="8">8th</option>
               </select>
             </div>
-            <div class="form-group">
-              <label for="email" class="col-form-label">Email : <br/><small><kbd>Note:</kbd> Please fill your email address accurately, as every update of the event will be conveyed to you via your email address.</small></label>
+            
+            <div class="col-12 form-group">
+              <label for="email" class="col-form-label pb-0">Email :</label><br class="m-0">
+              <small id="emailHelp" class="form-text text-muted"><kbd>Note:</kbd> Please fill your email address accurately, as every update of the event will be conveyed to you via your email address.</small>
               <input type="email" class="form-control" name="email" placeholder="Your Email" required>
             </div>
-            <div class="form-group">
-              <label for="moblie" class="col-form-label">Contact Number :</label>
-              <input type="tel" class="form-control" name="mobileno" placeholder="Your Conatct Number" required="[0-9]{10}">
-            </div>
-          </form> 
+          </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
