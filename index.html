@@ -11,10 +11,40 @@
         .modal-dialog{
           min-width: 50% !important;
         }
+        .clg-name{
+          font-size: 2em !important;
+        }
+      }
+      @media (max-width: 786px){
+        .clg-name{
+          font-size: 0.85em !important;
+        }
+        .clg-add{
+          font-size: 0.70em !important;
+        }
       }
     </style>
 </head>
 <body>
+  <!-- College Name -->
+  <div class="container-fluid py-2">
+    <div class="row align-items-center">
+      <div class="col-4 col-md-2">
+        <img class="img-fluid w-75 h-100" src="images/clg.png">
+      </div>
+      <div class="col-6 col-md-8 text-center">
+        <div class="fw-bold clg-name">Government Engineering College</div>
+        <div class="fs-5 clg-add">Sector-28, Gandhinager</div>
+      </div>
+      <div class="col-2 col-md-2">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/affiliated.png">
+          <img class="img-fluid" />
+        </picture>
+      </div>
+    </div>
+  </div>
+  
   <!-- Main Image -->
   <picture>
     <source media="(max-width: 425px)" srcset="images/mobile.jpg" alt="Events Registration">
